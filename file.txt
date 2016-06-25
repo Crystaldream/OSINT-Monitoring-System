@@ -1,0 +1,332 @@
+02:42:34 web.1    | started with pid 10682
+02:42:34 logbot.1 | started with pid 10683
+02:42:35 web.1    | /home/telmo/.rvm/gems/ruby-2.2.0@global/gems/bundler-1.8.2/lib/bundler/shared_helpers.rb:83: warning: Insecure world writable dir /usr/local in PATH, mode 040777
+02:42:35 logbot.1 | /home/telmo/.rvm/gems/ruby-2.2.0@global/gems/bundler-1.8.2/lib/bundler/shared_helpers.rb:83: warning: Insecure world writable dir /usr/local in PATH, mode 040777
+02:42:35 web.1    | == Shotgun/Puma on http://0.0.0.0:5000/
+02:42:35 web.1    | Puma 2.11.3 starting...
+02:42:35 web.1    | * Min threads: 0, max threads: 16
+02:42:35 web.1    | * Environment: development
+02:42:35 web.1    | * Listening on tcp://0.0.0.0:5000
+02:42:35 logbot.1 | [2015/07/01 02:42:35.570] !! [on handler] Registering handler with pattern `#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>`, reacting on `message`
+02:42:35 logbot.1 | [2015/07/01 02:42:35.570] !! [on handler] Registering handler with pattern `#<Cinch::Pattern:0x00000001cbe4d0 @prefix=nil, @pattern=//, @suffix=nil>`, reacting on `connect`
+02:42:35 logbot.1 | [2015/07/01 02:42:35.570] !! [on handler] Registering handler with pattern `#<Cinch::Pattern:0x00000001cbdaf8 @prefix=nil, @pattern=//, @suffix=nil>`, reacting on `disconnect`
+02:42:35 logbot.1 | [2015/07/01 02:42:35.570] II Connecting to barjavel.freenode.net:6667
+02:42:35 logbot.1 | [2015/07/01 02:42:35.669] << CAP LS 
+02:42:35 logbot.1 | [2015/07/01 02:42:35.669] << NICK badass 
+02:42:35 logbot.1 | [2015/07/01 02:42:35.669] << USER cinch 0 * :cinch
+02:42:35 logbot.1 | [2015/07/01 02:42:35.712] >> :barjavel.freenode.net NOTICE * :*** Looking up your hostname...
+02:42:35 logbot.1 | [2015/07/01 02:42:35.756] >> :barjavel.freenode.net NOTICE * :*** Checking Ident
+02:42:35 logbot.1 | [2015/07/01 02:42:35.756] >> :barjavel.freenode.net NOTICE * :*** Found your hostname
+02:42:42 logbot.1 | [2015/07/01 02:42:42.073] >> :barjavel.freenode.net NOTICE * :*** No Ident response
+02:42:42 logbot.1 | [2015/07/01 02:42:42.118] >> :barjavel.freenode.net CAP * LS :account-notify extended-join identify-msg multi-prefix sasl
+02:42:42 logbot.1 | [2015/07/01 02:42:42.118] << CAP REQ :multi-prefix sasl
+02:42:42 logbot.1 | [2015/07/01 02:42:42.162] >> :barjavel.freenode.net CAP badass ACK :multi-prefix sasl 
+02:42:42 logbot.1 | [2015/07/01 02:42:42.162] << CAP END 
+02:42:42 logbot.1 | [2015/07/01 02:42:42.207] >> :barjavel.freenode.net 001 badass :Welcome to the freenode Internet Relay Chat Network badass
+02:42:42 logbot.1 | [2015/07/01 02:42:42.207] >> :barjavel.freenode.net 002 badass :Your host is barjavel.freenode.net[195.154.200.232/6667], running version ircd-seven-1.1.3
+02:42:42 logbot.1 | [2015/07/01 02:42:42.207] II Detected IRCd: ircd-seven
+02:42:42 logbot.1 | [2015/07/01 02:42:42.207] >> :barjavel.freenode.net 003 badass :This server was created Fri Oct 24 2014 at 13:59:13 UTC
+02:42:42 logbot.1 | [2015/07/01 02:42:42.208] >> :barjavel.freenode.net 004 badass barjavel.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI 
+02:42:42 logbot.1 | [2015/07/01 02:42:42.208] >> :barjavel.freenode.net 005 badass CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+02:42:42 logbot.1 | [2015/07/01 02:42:42.209] !! [New thread] For #<Cinch::Handler @event=:connect pattern=#<Cinch::Pattern:0x00000001cbe4d0 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000001be0ae0> -- 1 in total.
+02:42:42 logbot.1 | [2015/07/01 02:42:42.209] II Detected network: freenode
+02:42:42 logbot.1 | [2015/07/01 02:42:42.209] !! [timer] Starting timer <Cinch::Timer 0/1 shots, 0s interval, threaded, not started, block: #<Proc:0x00000001cbe728@/home/telmo/.rvm/gems/ruby-2.2.0/gems/cinch-2.2.5/lib/cinch/bot.rb:264>>
+02:42:42 logbot.1 | [2015/07/01 02:42:42.209] >> :barjavel.freenode.net 005 badass CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+02:42:42 logbot.1 | [2015/07/01 02:42:42.209] !! [Thread done] For #<Cinch::Handler @event=:connect pattern=#<Cinch::Pattern:0x00000001cbe4d0 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000001be0ae0> -- 0 remaining.
+02:42:42 logbot.1 | [2015/07/01 02:42:42.210] >> :barjavel.freenode.net 005 badass EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+02:42:42 logbot.1 | [2015/07/01 02:42:42.210] >> :barjavel.freenode.net 251 badass :There are 161 users and 84137 invisible on 27 servers
+02:42:42 logbot.1 | [2015/07/01 02:42:42.210] >> :barjavel.freenode.net 252 badass 18 :IRC Operators online
+02:42:42 logbot.1 | [2015/07/01 02:42:42.210] >> :barjavel.freenode.net 253 badass 7 :unknown connection(s)
+02:42:42 logbot.1 | [2015/07/01 02:42:42.211] << JOIN #vulnhub 
+02:42:42 logbot.1 | [2015/07/01 02:42:42.211] >> :barjavel.freenode.net 254 badass 59518 :channels formed
+02:42:42 logbot.1 | [2015/07/01 02:42:42.211] >> :barjavel.freenode.net 255 badass :I have 4311 clients and 1 servers
+02:42:42 logbot.1 | [2015/07/01 02:42:42.211] >> :barjavel.freenode.net 265 badass 4311 9559 :Current local users 4311, max 9559
+02:42:42 logbot.1 | [2015/07/01 02:42:42.211] >> :barjavel.freenode.net 266 badass 84298 105669 :Current global users 84298, max 105669
+02:42:42 logbot.1 | [2015/07/01 02:42:42.211] >> :barjavel.freenode.net 250 badass :Highest connection count: 9560 (9559 clients) (1986688 connections received)
+02:42:42 logbot.1 | [2015/07/01 02:42:42.212] >> :barjavel.freenode.net 375 badass :- barjavel.freenode.net Message of the Day - 
+02:42:42 logbot.1 | [2015/07/01 02:42:42.212] >> :barjavel.freenode.net 372 badass :- Welcome to barjavel.freenode.net in Paris, FR, EU. 
+02:42:42 logbot.1 | [2015/07/01 02:42:42.212] >> :barjavel.freenode.net 372 badass :- Thanks to Bearstech (www.bearstech.com) for sponsoring
+02:42:42 logbot.1 | [2015/07/01 02:42:42.212] >> :barjavel.freenode.net 372 badass :- this server!
+02:42:42 logbot.1 | [2015/07/01 02:42:42.212] >> :barjavel.freenode.net 372 badass :-  
+02:42:42 logbot.1 | [2015/07/01 02:42:42.212] >> :barjavel.freenode.net 372 badass :- BARJAVEL, RENE [1911-1985].  Born in Nyons, he was a
+02:42:42 logbot.1 | [2015/07/01 02:42:42.212] >> :barjavel.freenode.net 372 badass :- science-fiction author, a journalist and a critic. He is
+02:42:42 logbot.1 | [2015/07/01 02:42:42.213] >> :barjavel.freenode.net 372 badass :- credited with having written the first novel to introduce 
+02:42:42 logbot.1 | [2015/07/01 02:42:42.213] >> :barjavel.freenode.net 372 badass :- the Grandfather Paradox in time travel, in his 1943 work 
+02:42:42 logbot.1 | [2015/07/01 02:42:42.213] >> :barjavel.freenode.net 372 badass :- '\u001FLe Voyageur imprudent\u001F'.
+02:42:42 logbot.1 | [2015/07/01 02:42:42.213] >> :barjavel.freenode.net 372 badass :-  
+02:42:42 logbot.1 | [2015/07/01 02:42:42.213] >> :barjavel.freenode.net 372 badass :- Welcome to freenode - supporting the free and open source
+02:42:42 logbot.1 | [2015/07/01 02:42:42.214] >> :barjavel.freenode.net 372 badass :- software communities since 1998.
+02:42:42 logbot.1 | [2015/07/01 02:42:42.214] >> :barjavel.freenode.net 372 badass :-  
+02:42:42 logbot.1 | [2015/07/01 02:42:42.214] >> :barjavel.freenode.net 372 badass :- By connecting to freenode you indicate that you have read and
+02:42:42 logbot.1 | [2015/07/01 02:42:42.214] >> :barjavel.freenode.net 372 badass :- accept our policies as set out on http://www.freenode.net
+02:42:42 logbot.1 | [2015/07/01 02:42:42.252] >> :barjavel.freenode.net 372 badass :- freenode runs an open proxy scanner. Please join #freenode for
+02:42:42 logbot.1 | [2015/07/01 02:42:42.252] >> :barjavel.freenode.net 372 badass :- any network-related questions or queries, where a number of
+02:42:42 logbot.1 | [2015/07/01 02:42:42.252] >> :barjavel.freenode.net 372 badass :- volunteer staff and helpful users will be happy to assist you.
+02:42:42 logbot.1 | [2015/07/01 02:42:42.253] >> :barjavel.freenode.net 372 badass :-  
+02:42:42 logbot.1 | [2015/07/01 02:42:42.253] >> :barjavel.freenode.net 372 badass :- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+02:42:42 logbot.1 | [2015/07/01 02:42:42.253] >> :barjavel.freenode.net 372 badass :- together with like-minded FOSS enthusiasts for talks and
+02:42:42 logbot.1 | [2015/07/01 02:42:42.254] >> :barjavel.freenode.net 372 badass :- real-life collaboration.
+02:42:42 logbot.1 | [2015/07/01 02:42:42.254] >> :barjavel.freenode.net 372 badass :-  
+02:42:42 logbot.1 | [2015/07/01 02:42:42.254] >> :barjavel.freenode.net 372 badass :- We would like to thank Private Internet Access
+02:42:42 logbot.1 | [2015/07/01 02:42:42.255] >> :barjavel.freenode.net 372 badass :- (https://www.privateinternetaccess.com/) and the other
+02:42:42 logbot.1 | [2015/07/01 02:42:42.256] >> :barjavel.freenode.net 372 badass :- organisations that help keep freenode and our other projects
+02:42:42 logbot.1 | [2015/07/01 02:42:42.257] >> :barjavel.freenode.net 372 badass :- running for their sustained support.
+02:42:42 logbot.1 | [2015/07/01 02:42:42.257] >> :barjavel.freenode.net 372 badass :-  
+02:42:42 logbot.1 | [2015/07/01 02:42:42.257] >> :barjavel.freenode.net 372 badass :- In particular we would like to thank the sponsor
+02:42:42 logbot.1 | [2015/07/01 02:42:42.259] >> :barjavel.freenode.net 372 badass :- of this server, details of which can be found above.
+02:42:42 logbot.1 | [2015/07/01 02:42:42.259] >> :barjavel.freenode.net 372 badass :-  
+02:42:42 logbot.1 | [2015/07/01 02:42:42.260] >> :barjavel.freenode.net 376 badass :End of /MOTD command.
+02:42:42 logbot.1 | [2015/07/01 02:42:42.261] >> :badass MODE badass :+i
+02:42:42 logbot.1 | [2015/07/01 02:42:42.262] >> :NickServ!NickServ@services. NOTICE badass :This nickname is registered. Please choose a different nickname, or identify via \u0002/msg NickServ identify <password>\u0002.
+02:42:48 logbot.1 | [2015/07/01 02:42:48.227] >> :badass!~cinch@a109-51-129-99.cpe.netcabo.pt JOIN #vulnhub 
+02:42:48 logbot.1 | [2015/07/01 02:42:48.230] << WHO #vulnhub %acfhnru 
+02:42:48 logbot.1 | [2015/07/01 02:42:48.230] << MODE #vulnhub +b 
+02:42:48 logbot.1 | [2015/07/01 02:42:48.230] << MODE #vulnhub 
+02:42:48 logbot.1 | [2015/07/01 02:42:48.231] >> :barjavel.freenode.net 332 badass #vulnhub :VulnHub ~ Vulnerable By Design || somethingsomethingbrainpan3something || **Newest VMs** Darknet: http://is.gd/rd7at5  Play XML Entities http://is.gd/EjTg9V  FartKnocker: http://is.gd/7T9tUS  ROP Primer: http://is.gd/oyJrAz || No spoilers in the main channel!
+02:42:48 logbot.1 | [2015/07/01 02:42:48.232] >> :barjavel.freenode.net 333 badass #vulnhub g0tmi1k!~g0tmi1k@pdpc/supporter/active/g0tmi1k 1434534651 
+02:42:48 logbot.1 | [2015/07/01 02:42:48.232] >> :barjavel.freenode.net 353 badass = #vulnhub :badass ___crux___ badass007 sneakerhax dexi rts32 sizzop kramotaq Arr0way cd1zz multiplex3r _Cthulu201 samiux byt3bl33d3r __crux__ Auqino nightcrawler varibull jkad nosleep77 barrebas OS-4420 zota kow777 crayon et0x recrudesce w1bble haken29a C4ST3R delvirok drone ryanoberto glitch13 a0xnirudh Dreg barbershopper l1quid- jmingov Mrk3D c0ncealed H1tch strata Tenhi sascha pHuNk3r5 Mr0x58 deadcan lightbulbone ps-aux DrAwesomeClaws action09 Sug4r kaluche_
+02:42:48 logbot.1 | [2015/07/01 02:42:48.240] >> :barjavel.freenode.net 353 badass = #vulnhub :jamesmcm_ drathir xmgv binkybear areaz tcunha eb0t byt3me ev0x nsh kocka xerubus vilkaspilkas jaymaster2000 doppo lostcuaz lnxg33k TheColonial sagi- norsec0de kdlv CryDeTaan Maleus blixna one1_ @Mr-Bot chiggins likvidera g0blin2 superkojiman FaV1r3s lopi justinsteven ducky2k9 grayraven OwariDa ragriz jorel soot juken that_rascal rkornmeyer kong0 soleblaze riking_ intestine Haydos MatToufoutu HalfEatenPie Guest69857 Bucciarati eip` historypeats
+02:42:48 logbot.1 | [2015/07/01 02:42:48.271] >> :barjavel.freenode.net 353 badass = #vulnhub :hpprinter100 jcran Adran akama awestin1 lepke voidfire_ outofbounds mulitia pronto tmh_ Slurpgeit effinae rasta_mouse guy_ g0tmi1k lordoza NullMode grutz thedukezip rev0l radman zer0w1re_ j3remy pasv` unlogic dook borifie1d BlackoutIsHereP Guest70152 awhitehttr Swappage pii4 them_ use_zfs_yo g0uZ BitK silas__ z3r0rz bill_e_ghote sysop_host foxtrotniner Eagle11 Peleus JC_SoCal antihaus g00ey Matir harrow D4rk hostess teh3ck bwall dzeta leonjza b00stfr3ak
+02:42:48 logbot.1 | [2015/07/01 02:42:48.277] >> :barjavel.freenode.net 353 badass = #vulnhub :teh3ck_work Kad-- weishaupt_ tanoi @ChanServ
+02:42:48 logbot.1 | [2015/07/01 02:42:48.279] >> :barjavel.freenode.net 366 badass #vulnhub :End of /NAMES list.
+02:42:48 logbot.1 | [2015/07/01 02:42:48.280] >> :services. 328 badass #vulnhub :https://www.vulnhub.com
+02:42:48 logbot.1 | [2015/07/01 02:42:48.280] >> :barjavel.freenode.net 354 badass #vulnhub ~cinch a109-51-129-99.cpe.netcabo.pt badass H 0 :cinch
+02:42:48 logbot.1 | [2015/07/01 02:42:48.280] >> :barjavel.freenode.net 354 badass #vulnhub ~crux cpe-67-11-140-214.satx.res.rr.com ___crux___ H 0 :realname
+02:42:48 logbot.1 | [2015/07/01 02:42:48.281] >> :barjavel.freenode.net 354 badass #vulnhub 6d338163 gateway/web/freenode/ip.109.51.129.99 badass007 H 0 :a109-51-129-99.cpe.netcabo.pt/109.51.129.99
+02:42:48 logbot.1 | [2015/07/01 02:42:48.282] >> :barjavel.freenode.net 354 badass #vulnhub ~hcs unaffiliated/sneakerhead sneakerhax H sneakerhead :I like sneakers
+02:42:48 logbot.1 | [2015/07/01 02:42:48.283] >> :barjavel.freenode.net 354 badass #vulnhub ~dexi ec2-23-21-57-202.compute-1.amazonaws.com dexi H dexi :dexi
+02:42:48 logbot.1 | [2015/07/01 02:42:48.283] >> :barjavel.freenode.net 354 badass #vulnhub 58fe6216 gateway/web/freenode/ip.88.254.98.22 rts32 H 0 :88.254.98.22 - http://webchat.freenode.net
+02:42:48 logbot.1 | [2015/07/01 02:42:48.283] >> :barjavel.freenode.net 354 badass #vulnhub ~sizzop unaffiliated/sizzop sizzop G sizzop :sizzop
+02:42:48 logbot.1 | [2015/07/01 02:42:48.285] >> :barjavel.freenode.net 354 badass #vulnhub ~kramotaq unaffiliated/kramotaq kramotaq H kramotaq :Someone Like You
+02:42:48 logbot.1 | [2015/07/01 02:42:48.285] >> :barjavel.freenode.net 354 badass #vulnhub ~Arr0way unaffiliated/arr0way Arr0way G Arr0way :meh
+02:42:48 logbot.1 | [2015/07/01 02:42:48.286] >> :barjavel.freenode.net 354 badass #vulnhub ~pwnag3 unaffiliated/cd1zz cd1zz H cd1zz :cd1zz
+02:42:48 logbot.1 | [2015/07/01 02:42:48.286] >> :barjavel.freenode.net 354 badass #vulnhub ~multiplex unaffiliated/multiplex3r multiplex3r H multiplex3r :multiplex3r
+02:42:48 logbot.1 | [2015/07/01 02:42:48.287] >> :barjavel.freenode.net 354 badass #vulnhub ~Cthulu201 unaffiliated/cthulu201 _Cthulu201 H Cthulu201 :Cthulu201
+02:42:48 logbot.1 | [2015/07/01 02:42:48.287] >> :barjavel.freenode.net 354 badass #vulnhub ~samiux unaffiliated/samiux samiux H samiux :samiux
+02:42:48 logbot.1 | [2015/07/01 02:42:48.288] >> :barjavel.freenode.net 354 badass #vulnhub uid60519 gateway/web/irccloud.com/x-dlxqjxhtdvorerxq byt3bl33d3r H byt3bl33d3r :byt3bl33d3r
+02:42:48 logbot.1 | [2015/07/01 02:42:48.289] >> :barjavel.freenode.net 354 badass #vulnhub ~crux cpe-67-11-140-214.satx.res.rr.com __crux__ H 0 :realname
+02:42:48 logbot.1 | [2015/07/01 02:42:48.289] >> :barjavel.freenode.net 354 badass #vulnhub ~Auqino 104-4-229-6.lightspeed.rcsntx.sbcglobal.net Auqino H Auqino :realname
+02:42:48 logbot.1 | [2015/07/01 02:42:48.289] >> :barjavel.freenode.net 354 badass #vulnhub ~kw unaffiliated/nightcrawler nightcrawler H nightcrawler :Got ZNC?
+02:42:48 logbot.1 | [2015/07/01 02:42:48.289] >> :barjavel.freenode.net 354 badass #vulnhub ~varibull ta.tainstruments.com varibull H 0 :realname
+02:42:48 logbot.1 | [2015/07/01 02:42:48.290] >> :barjavel.freenode.net 354 badass #vulnhub ~jkad unaffiliated/jkad jkad G jkad :J
+02:42:48 logbot.1 | [2015/07/01 02:42:48.290] >> :barjavel.freenode.net 354 badass #vulnhub uid7029 gateway/web/irccloud.com/x-lvxizlgsccueedec nosleep77 G nosleep77 :zack
+02:42:48 logbot.1 | [2015/07/01 02:42:48.290] >> :barjavel.freenode.net 354 badass #vulnhub ~bas unaffiliated/barrebas barrebas G barrebas :bas
+02:42:48 logbot.1 | [2015/07/01 02:42:48.290] >> :barjavel.freenode.net 354 badass #vulnhub ~OS4420 unaffiliated/os-4420 OS-4420 H OS-4420 :OS4420
+02:42:48 logbot.1 | [2015/07/01 02:42:48.290] >> :barjavel.freenode.net 354 badass #vulnhub ~zota unaffiliated/zota zota G zota :zota
+02:42:48 logbot.1 | [2015/07/01 02:42:48.291] >> :barjavel.freenode.net 354 badass #vulnhub ~kow 69.49.67.154 kow777 H kow777 :kow
+02:42:48 logbot.1 | [2015/07/01 02:42:48.291] >> :barjavel.freenode.net 354 badass #vulnhub ~user unaffiliated/button crayon H button :user
+02:42:48 logbot.1 | [2015/07/01 02:42:48.291] >> :barjavel.freenode.net 354 badass #vulnhub ~et0x pool-71-191-245-120.washdc.fios.verizon.net et0x H 0 :realname
+02:42:48 logbot.1 | [2015/07/01 02:42:48.291] >> :barjavel.freenode.net 354 badass #vulnhub ~rec unaffiliated/recrudesce recrudesce H recrudesce :recrudesce
+02:42:48 logbot.1 | [2015/07/01 02:42:48.291] >> :barjavel.freenode.net 354 badass #vulnhub ~Jamie unaffiliated/w1bble w1bble H w1bble :Meh
+02:42:48 logbot.1 | [2015/07/01 02:42:48.292] >> :barjavel.freenode.net 354 badass #vulnhub ~haken29a unaffiliated/haken29a haken29a H haken29a :haken29a
+02:42:48 logbot.1 | [2015/07/01 02:42:48.292] >> :barjavel.freenode.net 354 badass #vulnhub ~C4ST3R 200.91.93.210 C4ST3R H 0 :C4ST3R
+02:42:48 logbot.1 | [2015/07/01 02:42:48.292] >> :barjavel.freenode.net 354 badass #vulnhub ~delvirok 94.54.169.15 delvirok H Delvirok :realname
+02:42:48 logbot.1 | [2015/07/01 02:42:48.292] >> :barjavel.freenode.net 354 badass #vulnhub ~eip unaffiliated/drone drone H drone :drone
+02:42:48 logbot.1 | [2015/07/01 02:42:48.293] >> :barjavel.freenode.net 354 badass #vulnhub ~ryanobert unaffiliated/ryanoberto ryanoberto H ryanoberto :ryanoberto
+02:42:48 logbot.1 | [2015/07/01 02:42:48.293] >> :barjavel.freenode.net 354 badass #vulnhub ~ChuckT 64.78.150.141 glitch13 H glitch13 :ChuckT
+02:42:48 logbot.1 | [2015/07/01 02:42:48.293] >> :barjavel.freenode.net 354 badass #vulnhub uid26190 gateway/web/irccloud.com/x-quizycadrpautsmq a0xnirudh H a0xnirudh :lucif3r
+02:42:48 logbot.1 | [2015/07/01 02:42:48.293] >> :barjavel.freenode.net 354 badass #vulnhub ~Dreg 2001:41d0:52:100::f49 Dreg H Dreg :Dreg
+02:42:48 logbot.1 | [2015/07/01 02:42:48.293] >> :barjavel.freenode.net 354 badass #vulnhub ~barbersho ec2-54-148-111-51.us-west-2.compute.amazonaws.com barbershopper H 0 :barbershopper
+02:42:48 logbot.1 | [2015/07/01 02:42:48.294] >> :barjavel.freenode.net 354 badass #vulnhub ~Mike static-96-253-78-74.rcmdva.fios.verizon.net l1quid- H l1quid- :realname
+02:42:48 logbot.1 | [2015/07/01 02:42:48.294] >> :barjavel.freenode.net 354 badass #vulnhub ~jmingov ns2315765.ovh.net jmingov H jmingov :j
+02:42:48 logbot.1 | [2015/07/01 02:42:48.294] >> :barjavel.freenode.net 354 badass #vulnhub ~Mrk3D unaffiliated/mrk3d Mrk3D H Mrk3D :M
+02:42:48 logbot.1 | [2015/07/01 02:42:48.294] >> :barjavel.freenode.net 354 badass #vulnhub ~c0ncealed unaffiliated/c0ncealed c0ncealed H c0ncealed :c0ncealed
+02:42:48 logbot.1 | [2015/07/01 02:42:48.294] >> :barjavel.freenode.net 354 badass #vulnhub ~h1tch mo-184-5-200-176.dhcp.embarqhsd.net H1tch H H1tch :H1tch
+02:42:48 logbot.1 | [2015/07/01 02:42:48.294] >> :barjavel.freenode.net 354 badass #vulnhub strata dv.logbook.ga strata H strata :*Unknown*
+02:42:48 logbot.1 | [2015/07/01 02:42:48.295] >> :barjavel.freenode.net 354 badass #vulnhub ~tenhi 178.18.241.180 Tenhi H Tenhi :Kauan
+02:42:48 logbot.1 | [2015/07/01 02:42:48.295] >> :barjavel.freenode.net 354 badass #vulnhub ~sascha unaffiliated/sascha sascha G sascha :sascha
+02:42:48 logbot.1 | [2015/07/01 02:42:48.295] >> :barjavel.freenode.net 354 badass #vulnhub ~david 2604:180:2:6a1::2b49 pHuNk3r5 H 0 :david
+02:42:48 logbot.1 | [2015/07/01 02:42:48.295] >> :barjavel.freenode.net 354 badass #vulnhub uid57560 gateway/web/irccloud.com/x-xsoxwpdyguwymkxq Mr0x58 G Mr0x58 :Mr0x58netsec
+02:42:48 logbot.1 | [2015/07/01 02:42:48.295] >> :barjavel.freenode.net 354 badass #vulnhub ~kajus.ses unaffiliated/deadcan deadcan G deadcan :purple
+02:42:48 logbot.1 | [2015/07/01 02:42:48.295] >> :barjavel.freenode.net 354 badass #vulnhub ~lightbulb 198.199.104.59 lightbulbone H lightbulbone :dean
+02:42:48 logbot.1 | [2015/07/01 02:42:48.295] >> :barjavel.freenode.net 354 badass #vulnhub ~abuse 162-194-125-254.lightspeed.mtryca.sbcglobal.net ps-aux H ps-aux :psaux2719
+02:42:48 logbot.1 | [2015/07/01 02:42:48.296] >> :barjavel.freenode.net 354 badass #vulnhub ~DrAwesome gateway/vpn/privateinternetaccess/drawesomeclaws DrAwesomeClaws H DrAwesomeClaws :DrAwesomeClaws
+02:42:48 logbot.1 | [2015/07/01 02:42:48.296] >> :barjavel.freenode.net 354 badass #vulnhub ~action09 backtrack/beta-tester/action09 action09 G action09 :action09
+02:42:48 logbot.1 | [2015/07/01 02:42:48.296] >> :barjavel.freenode.net 354 badass #vulnhub ~sug4r unaffiliated/sug4r Sug4r G sug4r :Sug4r
+02:42:48 logbot.1 | [2015/07/01 02:42:48.296] >> :barjavel.freenode.net 354 badass #vulnhub ~lookass 78.220.210.20 kaluche_ H elkaluche :lookass
+02:42:48 logbot.1 | [2015/07/01 02:42:48.296] >> :barjavel.freenode.net 354 badass #vulnhub ~hexonian 2607:3f00:1:1cc::524a jamesmcm_ H jamesmcm_ :hexonian
+02:42:48 logbot.1 | [2015/07/01 02:42:48.296] >> :barjavel.freenode.net 354 badass #vulnhub ~kamiljk8 unaffiliated/drathir drathir G Drathir :drathir
+02:42:48 logbot.1 | [2015/07/01 02:42:48.297] >> :barjavel.freenode.net 354 badass #vulnhub ~maxi unaffiliated/plist xmgv H plist :maxi
+02:42:48 logbot.1 | [2015/07/01 02:42:48.297] >> :barjavel.freenode.net 354 badass #vulnhub uid45324 gateway/web/irccloud.com/x-mmgpmjjcxqrsputo binkybear H binkybear :Binky Bear
+02:42:48 logbot.1 | [2015/07/01 02:42:48.297] >> :barjavel.freenode.net 354 badass #vulnhub ~ke 178-17-168-234.ip.as43289.net areaz H 0 :ke
+02:42:48 logbot.1 | [2015/07/01 02:42:48.297] >> :barjavel.freenode.net 354 badass #vulnhub ~tiago unaffiliated/tcunha tcunha H tcunha :Tiago Cunha
+02:42:48 logbot.1 | [2015/07/01 02:42:48.297] >> :barjavel.freenode.net 354 badass #vulnhub ~ebot unaffiliated/eblip eb0t H eblip :ebot
+02:42:48 logbot.1 | [2015/07/01 02:42:48.297] >> :barjavel.freenode.net 354 badass #vulnhub ~byteme 168.235.146.64 byt3me H 0 :Byte Me
+02:42:48 logbot.1 | [2015/07/01 02:42:48.298] >> :barjavel.freenode.net 354 badass #vulnhub ev0x 198.148.93.115 ev0x H ev0x :ev0x
+02:42:48 logbot.1 | [2015/07/01 02:42:48.298] >> :barjavel.freenode.net 354 badass #vulnhub ~lol wikipedia/nsh nsh H nsh :Smedley Butler
+02:42:48 logbot.1 | [2015/07/01 02:42:48.298] >> :barjavel.freenode.net 354 badass #vulnhub ~kocka libertat.cypherpunk.hu kocka H 0 :kocka
+02:42:48 logbot.1 | [2015/07/01 02:42:48.298] >> :barjavel.freenode.net 354 badass #vulnhub ~xerubus unaffiliated/xerubus xerubus G xerubus :xerubus
+02:42:48 logbot.1 | [2015/07/01 02:42:48.298] >> :barjavel.freenode.net 354 badass #vulnhub ~vilkaspil 161.234.223.199.bc.googleusercontent.com vilkaspilkas H vilkaspilkas :vilkaspilkas
+02:42:48 logbot.1 | [2015/07/01 02:42:48.298] >> :barjavel.freenode.net 354 badass #vulnhub ~jaymaster ppp59-167-167-162.static.internode.on.net jaymaster2000 H Jaymaster2000 :Unknown
+02:42:48 logbot.1 | [2015/07/01 02:42:48.298] >> :barjavel.freenode.net 354 badass #vulnhub doppo 2604:180::e0fc:a07f doppo H doppo :doppo
+02:42:48 logbot.1 | [2015/07/01 02:42:48.299] >> :barjavel.freenode.net 354 badass #vulnhub ~km lostcuaz.com lostcuaz H 0 :KyleM
+02:42:48 logbot.1 | [2015/07/01 02:42:48.299] >> :barjavel.freenode.net 354 badass #vulnhub ~lnxg33k unaffiliated/lnxg33k lnxg33k G lnxg33k :lnxg33k
+02:42:48 logbot.1 | [2015/07/01 02:42:48.299] >> :barjavel.freenode.net 354 badass #vulnhub ~oj metasploit/TheColonial TheColonial H TheColonial :OJ
+02:42:48 logbot.1 | [2015/07/01 02:42:48.299] >> :barjavel.freenode.net 354 badass #vulnhub ~null unaffiliated/sagi- sagi- H sagi- :\x00
+02:42:48 logbot.1 | [2015/07/01 02:42:48.299] >> :barjavel.freenode.net 354 badass #vulnhub ~portscan unaffiliated/portscan norsec0de H portscan :anonymous
+02:42:48 logbot.1 | [2015/07/01 02:42:48.300] >> :barjavel.freenode.net 354 badass #vulnhub ~aa47f8 h187n14-far-a13.ias.bredband.telia.com kdlv H aa47f8 :aa47f8
+02:42:48 logbot.1 | [2015/07/01 02:42:48.300] >> :barjavel.freenode.net 354 badass #vulnhub ~CryDeTaan unaffiliated/crydetaan CryDeTaan H CryDeTaan :CryDeTaan
+02:42:48 logbot.1 | [2015/07/01 02:42:48.300] >> :barjavel.freenode.net 354 badass #vulnhub ~Maleus 2604:180:2::e824:e562 Maleus G 0 :Maleus
+02:42:48 logbot.1 | [2015/07/01 02:42:48.300] >> :barjavel.freenode.net 354 badass #vulnhub ~blixna unaffiliated/blixna blixna H blixna :blixna
+02:42:48 logbot.1 | [2015/07/01 02:42:48.300] >> :barjavel.freenode.net 354 badass #vulnhub one1 gateway/shell/firrre/x-rtfhasnsbjdjssvv one1_ G one1 :0ne1
+02:42:48 logbot.1 | [2015/07/01 02:42:48.300] >> :barjavel.freenode.net 354 badass #vulnhub ~Mr-Bot unaffiliated/g0tmi1k/bot/mr-bot Mr-Bot H@ Mr-Bot :Mr-Bot
+02:42:48 logbot.1 | [2015/07/01 02:42:48.300] >> :barjavel.freenode.net 354 badass #vulnhub ~chiggins c-24-14-57-135.hsd1.il.comcast.net chiggins G 0 :Olive Juice
+02:42:48 logbot.1 | [2015/07/01 02:42:48.301] >> :barjavel.freenode.net 354 badass #vulnhub ~likvidera digitalaunderjorden.se likvidera H likvidera :likvidera
+02:42:48 logbot.1 | [2015/07/01 02:42:48.318] >> :barjavel.freenode.net 354 badass #vulnhub ~g0blin research.g0blin.co.uk g0blin2 H 0 :James Hooker
+02:42:48 logbot.1 | [2015/07/01 02:42:48.319] >> :barjavel.freenode.net 354 badass #vulnhub uid25985 gateway/web/irccloud.com/x-cnrwsenvzkjaylgj superkojiman H superkojiman :superkojiman
+02:42:48 logbot.1 | [2015/07/01 02:42:48.319] >> :barjavel.freenode.net 354 badass #vulnhub ~Whois_You unaffiliated/fav1r3s FaV1r3s H FaV1r3s :uname -a
+02:42:48 logbot.1 | [2015/07/01 02:42:48.320] >> :barjavel.freenode.net 354 badass #vulnhub ~lopi 2607:ff48:1:2::213a:4c5c lopi H 0 :lopi
+02:42:48 logbot.1 | [2015/07/01 02:42:48.320] >> :barjavel.freenode.net 354 badass #vulnhub ~justinste unaffiliated/justinsteven justinsteven H justinsteven :justinsteven
+02:42:48 logbot.1 | [2015/07/01 02:42:48.320] >> :barjavel.freenode.net 354 badass #vulnhub ~ducky 2001:1af8:4700:a03b:230:48ff:fefb:b12c ducky2k9 G 0 :ducky
+02:42:48 logbot.1 | [2015/07/01 02:42:48.320] >> :barjavel.freenode.net 354 badass #vulnhub ~grayraven unaffiliated/grayraven grayraven G grayraven :Gray Raven
+02:42:48 logbot.1 | [2015/07/01 02:42:48.321] >> :barjavel.freenode.net 354 badass #vulnhub ~je c-21e7e655.014-410-7570702.cust.bredbandsbolaget.se OwariDa H OwariDa :.oOo. 0LD 5K00L .oOo.
+02:42:48 logbot.1 | [2015/07/01 02:42:48.321] >> :barjavel.freenode.net 354 badass #vulnhub ~ragriz 2604:a880:800:10::883:f001 ragriz H ragriz :ragriz
+02:42:48 logbot.1 | [2015/07/01 02:42:48.323] >> :barjavel.freenode.net 354 badass #vulnhub ~matt blowme.asia jorel H jorel :matt
+02:42:48 logbot.1 | [2015/07/01 02:42:48.323] >> :barjavel.freenode.net 354 badass #vulnhub ~irc 95.85.49.225 soot H soot :Unknown
+02:42:48 logbot.1 | [2015/07/01 02:42:48.323] >> :barjavel.freenode.net 354 badass #vulnhub irssi unaffiliated/juken juken H juken :juken,,,
+02:42:48 logbot.1 | [2015/07/01 02:42:48.324] >> :barjavel.freenode.net 354 badass #vulnhub sid20951 gateway/web/irccloud.com/x-nedpbzvdbihoaqzq that_rascal H rvrsh3ll :rvrsh3ll
+02:42:48 logbot.1 | [2015/07/01 02:42:48.324] >> :barjavel.freenode.net 354 badass #vulnhub sid22698 gateway/web/irccloud.com/x-ivwamuhvsmdmjrhl rkornmeyer H RKornmeyer :Robert Kornmeyer
+02:42:48 logbot.1 | [2015/07/01 02:42:48.324] >> :barjavel.freenode.net 354 badass #vulnhub ~comodo unaffiliated/ethicalhacker kong0 G kong0 :Got ZNC?
+02:42:48 logbot.1 | [2015/07/01 02:42:48.325] >> :barjavel.freenode.net 354 badass #vulnhub ~soleblaze unaffiliated/soleblaze soleblaze H soleblaze :soleblaze
+02:42:48 logbot.1 | [2015/07/01 02:42:48.325] >> :barjavel.freenode.net 354 badass #vulnhub ~RikZNC 107.170.242.76 riking_ G 0 :Riking
+02:42:48 logbot.1 | [2015/07/01 02:42:48.325] >> :barjavel.freenode.net 354 badass #vulnhub ~intestine ec2-54-72-14-57.eu-west-1.compute.amazonaws.com intestine H 0 :intestine
+02:42:48 logbot.1 | [2015/07/01 02:42:48.325] >> :barjavel.freenode.net 354 badass #vulnhub ~Haydos unaffiliated/haydos Haydos G Haydos :GetOutOfMyLife
+02:42:48 logbot.1 | [2015/07/01 02:42:48.326] >> :barjavel.freenode.net 354 badass #vulnhub ~MaT unaffiliated/mattoufoutu MatToufoutu G MatToufoutu :MaT
+02:42:48 logbot.1 | [2015/07/01 02:42:48.326] >> :barjavel.freenode.net 354 badass #vulnhub ~HalfEaten unaffiliated/halfeatenpie HalfEatenPie H HalfEatenPie :HalfEatenPie
+02:42:48 logbot.1 | [2015/07/01 02:42:48.326] >> :barjavel.freenode.net 354 badass #vulnhub ~m3g9tr0n bindshell.nl Guest69857 H 0 :Spiros Fraganastasis
+02:42:48 logbot.1 | [2015/07/01 02:42:48.327] >> :barjavel.freenode.net 354 badass #vulnhub buccia u.nix.is Bucciarati H Bucciarati :Fernando Vezzosi
+02:42:48 logbot.1 | [2015/07/01 02:42:48.327] >> :barjavel.freenode.net 354 badass #vulnhub sid27234 gateway/web/irccloud.com/x-ynorxiuxfsgncgyz eip` H eiphuntard :eiphunter
+02:42:48 logbot.1 | [2015/07/01 02:42:48.327] >> :barjavel.freenode.net 354 badass #vulnhub sid42898 gateway/web/irccloud.com/x-jefcammxsifctumi historypeats H historypeats :historypeats
+02:42:48 logbot.1 | [2015/07/01 02:42:48.328] >> :barjavel.freenode.net 354 badass #vulnhub ~hpprinter unaffiliated/hpprinter100 hpprinter100 H hpprinter100 :hpprinter100
+02:42:48 logbot.1 | [2015/07/01 02:42:48.328] >> :barjavel.freenode.net 354 badass #vulnhub sid23066 gateway/web/irccloud.com/x-lokuwawctiaicgfq jcran G 0 :Jonathan Cran
+02:42:48 logbot.1 | [2015/07/01 02:42:48.328] >> :barjavel.freenode.net 354 badass #vulnhub ~adran botters/staff/adran Adran H adran :Adran Duran
+02:42:48 logbot.1 | [2015/07/01 02:42:48.328] >> :barjavel.freenode.net 354 badass #vulnhub ~akama irc.nexadmin.com akama H akama :akama
+02:42:48 logbot.1 | [2015/07/01 02:42:48.329] >> :barjavel.freenode.net 354 badass #vulnhub sid20967 gateway/web/irccloud.com/x-jkwggwriyyasivqv awestin1 H awestin1 :awestin1
+02:42:48 logbot.1 | [2015/07/01 02:42:48.329] >> :barjavel.freenode.net 354 badass #vulnhub sid85190 gateway/web/irccloud.com/x-grzpehsaualhbokg lepke H lepke :lepke
+02:42:48 logbot.1 | [2015/07/01 02:42:48.329] >> :barjavel.freenode.net 354 badass #vulnhub ~voidfire shellie.darchoods.net voidfire_ H 0 :voidfire
+02:42:48 logbot.1 | [2015/07/01 02:42:48.329] >> :barjavel.freenode.net 354 badass #vulnhub ~outofboun unaffiliated/outofbounds outofbounds G outofbounds :Out Of Bounds
+02:42:48 logbot.1 | [2015/07/01 02:42:48.330] >> :barjavel.freenode.net 354 badass #vulnhub ~mulitia 162.243.68.213 mulitia H mulitia :mulitia
+02:42:48 logbot.1 | [2015/07/01 02:42:48.330] >> :barjavel.freenode.net 354 badass #vulnhub pronto tasty.bagels.xxx pronto H pronto :pronto
+02:42:48 logbot.1 | [2015/07/01 02:42:48.330] >> :barjavel.freenode.net 354 badass #vulnhub ~tmh loophole.cc tmh_ H 0 :Why do you care?
+02:42:48 logbot.1 | [2015/07/01 02:42:48.331] >> :barjavel.freenode.net 354 badass #vulnhub ~slurpgeit flying.super.turd.nl Slurpgeit H Slurpgeit :Slurpgeit
+02:42:48 logbot.1 | [2015/07/01 02:42:48.331] >> :barjavel.freenode.net 354 badass #vulnhub ~user 5.199.171.29 effinae H 0 :Unknown
+02:42:48 logbot.1 | [2015/07/01 02:42:48.332] >> :barjavel.freenode.net 354 badass #vulnhub ~quassel ec2-54-93-102-142.eu-central-1.compute.amazonaws.com rasta_mouse G rasta_mouse :Rasta Mouse
+02:42:48 logbot.1 | [2015/07/01 02:42:48.332] >> :barjavel.freenode.net 354 badass #vulnhub ~guy unaffiliated/guy/x-2189580 guy_ H guy_ :guy
+02:42:48 logbot.1 | [2015/07/01 02:42:48.333] >> :barjavel.freenode.net 354 badass #vulnhub ~g0tmi1k pdpc/supporter/active/g0tmi1k g0tmi1k G g0tmi1k :g0tmi1k
+02:42:48 logbot.1 | [2015/07/01 02:42:48.333] >> :barjavel.freenode.net 354 badass #vulnhub ~lord 128.199.61.195 lordoza H 0 :lord
+02:42:48 logbot.1 | [2015/07/01 02:42:48.333] >> :barjavel.freenode.net 354 badass #vulnhub ~quassel unaffiliated/nullmode NullMode G NullMode :Ken Wang
+02:42:48 logbot.1 | [2015/07/01 02:42:48.334] >> :barjavel.freenode.net 354 badass #vulnhub ~grutz 104.131.138.191 grutz H grutz :Kurt Grutzmacher
+02:42:48 logbot.1 | [2015/07/01 02:42:48.334] >> :barjavel.freenode.net 354 badass #vulnhub ~thedukezi unaffiliated/thedukezip thedukezip H TheDukeZip :thedukezip
+02:42:48 logbot.1 | [2015/07/01 02:42:48.334] >> :barjavel.freenode.net 354 badass #vulnhub rev0l server2.shellfire.net rev0l H 0 :reV
+02:42:48 logbot.1 | [2015/07/01 02:42:48.334] >> :barjavel.freenode.net 354 badass #vulnhub ~radman unaffiliated/radman radman H radman :radman
+02:42:48 logbot.1 | [2015/07/01 02:42:48.335] >> :barjavel.freenode.net 354 badass #vulnhub ~connor 104.236.240.149 zer0w1re_ H 0 :connor
+02:42:48 logbot.1 | [2015/07/01 02:42:48.335] >> :barjavel.freenode.net 354 badass #vulnhub ~jeremy unaffiliated/j3remy j3remy H j3remy :jeremy
+02:42:48 logbot.1 | [2015/07/01 02:42:48.335] >> :barjavel.freenode.net 354 badass #vulnhub ~pasv shell.fishing pasv` H 0 :pasv
+02:42:48 logbot.1 | [2015/07/01 02:42:48.335] >> :barjavel.freenode.net 354 badass #vulnhub ~unlogic 81.4.109.13 unlogic H 0 :unlogic
+02:42:48 logbot.1 | [2015/07/01 02:42:48.335] >> :barjavel.freenode.net 354 badass #vulnhub ~dook dook.biz dook G 0 :Err...dook what more you need?
+02:42:48 logbot.1 | [2015/07/01 02:42:48.336] >> :barjavel.freenode.net 354 badass #vulnhub ~bf 178.62.1.103 borifie1d H 0 :Unknown
+02:42:48 logbot.1 | [2015/07/01 02:42:48.336] >> :barjavel.freenode.net 354 badass #vulnhub Blackout znc.blackout.pw BlackoutIsHereP G 0 :BlackoutIsHere-freenode
+02:42:48 logbot.1 | [2015/07/01 02:42:48.336] >> :barjavel.freenode.net 354 badass #vulnhub ~l c-98-244-99-36.hsd1.va.comcast.net Guest70152 H 0 :l
+02:42:48 logbot.1 | [2015/07/01 02:42:48.336] >> :barjavel.freenode.net 354 badass #vulnhub ~beard unaffiliated/awhitehttr awhitehttr H awhitehttr :awhitehttr
+02:42:48 logbot.1 | [2015/07/01 02:42:48.336] >> :barjavel.freenode.net 354 badass #vulnhub ~rampage unaffiliated/swappage Swappage H Swappage :rampage
+02:42:48 logbot.1 | [2015/07/01 02:42:48.337] >> :barjavel.freenode.net 354 badass #vulnhub ~pii4__ unaffiliated/pii4 pii4 H pii4 :VOID
+02:42:48 logbot.1 | [2015/07/01 02:42:48.337] >> :barjavel.freenode.net 354 badass #vulnhub themson unaffiliated/them-/x-6436823 them_ H them_ :them
+02:42:48 logbot.1 | [2015/07/01 02:42:48.337] >> :barjavel.freenode.net 354 badass #vulnhub ~use_zfs_y 96-32-46-235.dhcp.nwtn.ct.charter.com use_zfs_yo G use_zfs_yo :use_zfs_yo
+02:42:48 logbot.1 | [2015/07/01 02:42:48.337] >> :barjavel.freenode.net 354 badass #vulnhub ~NickServ 2a01:e35:8b27:81c0:6e88:14ff:fe7f:5ec0 g0uZ H 0 :g0uZ
+02:42:48 logbot.1 | [2015/07/01 02:42:48.337] >> :barjavel.freenode.net 354 badass #vulnhub ~philip_l arzaroth.com BitK H BitK :philip_l
+02:42:48 logbot.1 | [2015/07/01 02:42:48.338] >> :barjavel.freenode.net 354 badass #vulnhub ~silas__ 67.215.255.142 silas__ H 0 :Null
+02:42:48 logbot.1 | [2015/07/01 02:42:48.338] >> :barjavel.freenode.net 354 badass #vulnhub ~z3r0rz 178.33.173.45 z3r0rz H z3r0rz :z3r0rz
+02:42:48 logbot.1 | [2015/07/01 02:42:48.338] >> :barjavel.freenode.net 354 badass #vulnhub ~wdawson adsl-072-148-255-125.sip.asm.bellsouth.net bill_e_ghote G Bill_E_Ghote :purple
+02:42:48 logbot.1 | [2015/07/01 02:42:48.338] >> :barjavel.freenode.net 354 badass #vulnhub ~sysop_hos unaffiliated/sysop-host/x-8017252 sysop_host G sysop_host :sysop_host
+02:42:48 logbot.1 | [2015/07/01 02:42:48.339] >> :barjavel.freenode.net 354 badass #vulnhub ~foxtrotni pool-108-21-74-72.nycmny.fios.verizon.net foxtrotniner H foxtrotniner :realname
+02:42:48 logbot.1 | [2015/07/01 02:42:48.339] >> :barjavel.freenode.net 354 badass #vulnhub ~Eagle11 unaffiliated/on-jtharpe/x-5590820 Eagle11 H Eagle11 :Eagle11
+02:42:48 logbot.1 | [2015/07/01 02:42:48.339] >> :barjavel.freenode.net 354 badass #vulnhub ~Peleus unaffiliated/peleus Peleus H Peleus :Peleus
+02:42:48 logbot.1 | [2015/07/01 02:42:48.339] >> :barjavel.freenode.net 354 badass #vulnhub sid1590 gateway/web/irccloud.com/x-siwmoyurmkjcgdep JC_SoCal G MoMo :MoMo
+02:42:48 logbot.1 | [2015/07/01 02:42:48.339] >> :barjavel.freenode.net 354 badass #vulnhub ~antihaus ec2-54-64-102-124.ap-northeast-1.compute.amazonaws.com antihaus H antihaus :antihaus
+02:42:48 logbot.1 | [2015/07/01 02:42:48.340] >> :barjavel.freenode.net 354 badass #vulnhub ~g00ey 188.166.99.162 g00ey G g00ey :Got ZNC?
+02:42:48 logbot.1 | [2015/07/01 02:42:48.340] >> :barjavel.freenode.net 354 badass #vulnhub ~matir ubuntu/member/matir Matir H matir :Matir
+02:42:48 logbot.1 | [2015/07/01 02:42:48.340] >> :barjavel.freenode.net 354 badass #vulnhub ~harrow 105.ip-167-114-152.net harrow H niska :harrow
+02:42:48 logbot.1 | [2015/07/01 02:42:48.340] >> :barjavel.freenode.net 354 badass #vulnhub ~D4rk unaffiliated/d4rk D4rk H D4rk :D4rk
+02:42:48 logbot.1 | [2015/07/01 02:42:48.340] >> :barjavel.freenode.net 354 badass #vulnhub hostess pdpc/supporter/active/hostess hostess H hostess :hostess
+02:42:48 logbot.1 | [2015/07/01 02:42:48.341] >> :barjavel.freenode.net 354 badass #vulnhub ~teh3ck 2a00:d880:0:10::6a3e:b565 teh3ck H teh3ck :teh3ck
+02:42:48 logbot.1 | [2015/07/01 02:42:48.341] >> :barjavel.freenode.net 354 badass #vulnhub ~quassel unaffiliated/schizo bwall H schizo :@botnet_hunter
+02:42:48 logbot.1 | [2015/07/01 02:42:48.341] >> :barjavel.freenode.net 354 badass #vulnhub ~dzeta 62.210.240.170 dzeta G dzeta :Unknown
+02:42:48 logbot.1 | [2015/07/01 02:42:48.341] >> :barjavel.freenode.net 354 badass #vulnhub ~user unaffiliated/leonjza leonjza H leonjza :user
+02:42:48 logbot.1 | [2015/07/01 02:42:48.342] >> :barjavel.freenode.net 354 badass #vulnhub ~b00stfr3a unaffiliated/b00stfr3ak b00stfr3ak H b00stfr3ak :Unknown
+02:42:48 logbot.1 | [2015/07/01 02:42:48.342] >> :barjavel.freenode.net 354 badass #vulnhub ~teh3ck_wo 2a00:d880:0:10::6a3e:b565 teh3ck_work H 0 :teh3ck_work
+02:42:48 logbot.1 | [2015/07/01 02:42:48.342] >> :barjavel.freenode.net 354 badass #vulnhub kad-- unaffiliated/kad-- Kad-- H Kad-- :RealName
+02:42:48 logbot.1 | [2015/07/01 02:42:48.342] >> :barjavel.freenode.net 354 badass #vulnhub ~myrc 188.226.215.32 weishaupt_ H 0 :myrc
+02:42:48 logbot.1 | [2015/07/01 02:42:48.342] >> :barjavel.freenode.net 354 badass #vulnhub ~tanoi li343-227.members.linode.com tanoi H tanoi :smile more
+02:42:48 logbot.1 | [2015/07/01 02:42:48.343] >> :barjavel.freenode.net 354 badass #vulnhub ChanServ services. ChanServ H@ 0 :Channel Services
+02:42:48 logbot.1 | [2015/07/01 02:42:48.343] >> :barjavel.freenode.net 315 badass #vulnhub :End of /WHO list.
+02:42:48 logbot.1 | [2015/07/01 02:42:48.343] >> :barjavel.freenode.net 367 badass #vulnhub *!*@162.216.46.68 g0tmi1k!~g0tmi1k@pdpc/supporter/active/g0tmi1k 1434536704 
+02:42:48 logbot.1 | [2015/07/01 02:42:48.343] >> :barjavel.freenode.net 367 badass #vulnhub *!*@32.218.137.51* NullMode!~quassel@unaffiliated/nullmode 1433234270 
+02:42:48 logbot.1 | [2015/07/01 02:42:48.344] >> :barjavel.freenode.net 367 badass #vulnhub *!*@32.218.139.47* NullMode!~quassel@unaffiliated/nullmode 1432896205 
+02:42:48 logbot.1 | [2015/07/01 02:42:48.344] >> :barjavel.freenode.net 367 badass #vulnhub vulnhub*!*@* barjavel.freenode.net 1429989153 
+02:42:48 logbot.1 | [2015/07/01 02:42:48.344] >> :barjavel.freenode.net 367 badass #vulnhub *!~tsukoyomi@*.com.au barjavel.freenode.net 1429989153 
+02:42:48 logbot.1 | [2015/07/01 02:42:48.344] >> :barjavel.freenode.net 367 badass #vulnhub *!mangekyo@* barjavel.freenode.net 1429989153 
+02:42:48 logbot.1 | [2015/07/01 02:42:48.345] >> :barjavel.freenode.net 367 badass #vulnhub mangekyo!*@* barjavel.freenode.net 1429989153 
+02:42:48 logbot.1 | [2015/07/01 02:42:48.345] >> :barjavel.freenode.net 367 badass #vulnhub *!~thong@seek42.net barjavel.freenode.net 1429989153 
+02:42:48 logbot.1 | [2015/07/01 02:42:48.345] >> :barjavel.freenode.net 367 badass #vulnhub *!*@14-201-217-28.tpgi.com.au barjavel.freenode.net 1429989153 
+02:42:48 logbot.1 | [2015/07/01 02:42:48.345] >> :barjavel.freenode.net 368 badass #vulnhub :End of Channel Ban List
+02:42:48 logbot.1 | [2015/07/01 02:42:48.345] >> :barjavel.freenode.net 324 badass #vulnhub +gnt 
+02:42:48 logbot.1 | [2015/07/01 02:42:48.346] >> :barjavel.freenode.net 329 badass #vulnhub 1347493283 
+02:43:43 logbot.1 | [2015/07/01 02:43:43.830] >> :rts32!58fe6216@gateway/web/freenode/ip.88.254.98.22 PRIVMSG #vulnhub :wait
+02:43:43 logbot.1 | [2015/07/01 02:43:43.832] !! [New thread] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000000f1a040> -- 1 in total.
+02:43:43 logbot.1 | [2015/07/01 02:43:43.832] !! [Thread done] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000000f1a040> -- 0 remaining.
+02:44:00 logbot.1 | [2015/07/01 02:44:00.067] >> :rts32!58fe6216@gateway/web/freenode/ip.88.254.98.22 PRIVMSG #vulnhub :was that <Directory> supposed to be in httpd.conf or .htacccess?
+02:44:00 logbot.1 | [2015/07/01 02:44:00.068] !! [New thread] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000000f12cc8> -- 1 in total.
+02:44:00 logbot.1 | [2015/07/01 02:44:00.068] !! [Thread done] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000000f12cc8> -- 0 remaining.
+02:44:35 logbot.1 | [2015/07/01 02:44:35.669] << PING 0 
+02:44:35 logbot.1 | [2015/07/01 02:44:35.714] >> :barjavel.freenode.net PONG barjavel.freenode.net :0
+02:45:50 logbot.1 | [2015/07/01 02:45:50.707] >> :__crux__!~crux@cpe-67-11-140-214.satx.res.rr.com QUIT :Ping timeout: 248 seconds
+02:46:07 logbot.1 | [2015/07/01 02:46:07.844] >> :sagi-!~null@unaffiliated/sagi- PRIVMSG #vulnhub :yes.
+02:46:07 logbot.1 | [2015/07/01 02:46:07.845] !! [New thread] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000000f04628> -- 1 in total.
+02:46:07 logbot.1 | [2015/07/01 02:46:07.846] !! [Thread done] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000000f04628> -- 0 remaining.
+02:46:32 logbot.1 | [2015/07/01 02:46:32.998] >> :sagi-!~null@unaffiliated/sagi- PRIVMSG #vulnhub :"For directory context this means in <Directory>, <Location>, and <Files> blocks in your httpd.conf or your distro's main Apache config file or virtual host config file."
+02:46:32 logbot.1 | [2015/07/01 02:46:32.999] !! [New thread] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000000ef8990> -- 1 in total.
+02:46:33 logbot.1 | [2015/07/01 02:46:33.000] !! [Thread done] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000000ef8990> -- 0 remaining.
+02:46:35 logbot.1 | [2015/07/01 02:46:35.669] << PING 0 
+02:46:35 logbot.1 | [2015/07/01 02:46:35.713] >> :barjavel.freenode.net PONG barjavel.freenode.net :0
+02:47:40 logbot.1 | [2015/07/01 02:47:40.293] >> :rts32!58fe6216@gateway/web/freenode/ip.88.254.98.22 PRIVMSG #vulnhub :there isn't any httpd.conf
+02:47:40 logbot.1 | [2015/07/01 02:47:40.294] !! [New thread] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000001d0fbc8> -- 1 in total.
+02:47:40 logbot.1 | [2015/07/01 02:47:40.295] !! [Thread done] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000001d0fbc8> -- 0 remaining.
+02:47:47 logbot.1 | [2015/07/01 02:47:47.312] >> :rts32!58fe6216@gateway/web/freenode/ip.88.254.98.22 PRIVMSG #vulnhub :only apache2.conf
+02:47:47 logbot.1 | [2015/07/01 02:47:47.314] !! [New thread] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000001c4c038> -- 1 in total.
+02:47:47 logbot.1 | [2015/07/01 02:47:47.314] !! [Thread done] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000001c4c038> -- 0 remaining.
+02:48:35 logbot.1 | [2015/07/01 02:48:35.669] << PING 0 
+02:48:35 logbot.1 | [2015/07/01 02:48:35.719] >> :barjavel.freenode.net PONG barjavel.freenode.net :0
+02:48:42 logbot.1 | [2015/07/01 02:48:42.912] >> :sagi-!~null@unaffiliated/sagi- PRIVMSG #vulnhub :09:46 < sagi-> "For directory context this means in <Directory>, <Location>, and <Files> blocks in your httpd.conf or your distro's main Apache config file or virtual host config file."  <-- or your distro's main Apache config..
+02:48:42 logbot.1 | [2015/07/01 02:48:42.912] !! [New thread] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000001e68bf0> -- 1 in total.
+02:48:42 logbot.1 | [2015/07/01 02:48:42.913] !! [Thread done] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000001e68bf0> -- 0 remaining.
+02:48:58 logbot.1 | [2015/07/01 02:48:58.539] >> :rts32!58fe6216@gateway/web/freenode/ip.88.254.98.22 PRIVMSG #vulnhub :ah ok
+02:48:58 logbot.1 | [2015/07/01 02:48:58.540] !! [New thread] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000001e4fe20> -- 1 in total.
+02:48:58 logbot.1 | [2015/07/01 02:48:58.540] !! [Thread done] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000001e4fe20> -- 0 remaining.
+02:49:04 logbot.1 | [2015/07/01 02:49:04.527] >> :sagi-!~null@unaffiliated/sagi- PRIVMSG #vulnhub :gtg
+02:49:04 logbot.1 | [2015/07/01 02:49:04.528] !! [New thread] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000001e3f598> -- 1 in total.
+02:49:04 logbot.1 | [2015/07/01 02:49:04.528] !! [Thread done] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000001e3f598> -- 0 remaining.
+02:49:12 logbot.1 | [2015/07/01 02:49:12.968] >> :rts32!58fe6216@gateway/web/freenode/ip.88.254.98.22 PRIVMSG #vulnhub :ok, thx for help
+02:49:12 logbot.1 | [2015/07/01 02:49:12.969] !! [New thread] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000001e2b160> -- 1 in total.
+02:49:12 logbot.1 | [2015/07/01 02:49:12.970] !! [Thread done] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000001e2b160> -- 0 remaining.
+02:49:18 logbot.1 | [2015/07/01 02:49:18.759] >> :sagi-!~null@unaffiliated/sagi- PRIVMSG #vulnhub :cheers
+02:49:18 logbot.1 | [2015/07/01 02:49:18.760] !! [New thread] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000001e0e8f8> -- 1 in total.
+02:49:18 logbot.1 | [2015/07/01 02:49:18.761] !! [Thread done] For #<Cinch::Handler @event=:message pattern=#<Cinch::Pattern:0x00000001cd54c8 @prefix=nil, @pattern=//, @suffix=nil>>: #<Thread:0x00000001e0e8f8> -- 0 remaining.
+02:50:35 logbot.1 | [2015/07/01 02:50:35.669] << PING 0 
+02:50:35 logbot.1 | [2015/07/01 02:50:35.714] >> :barjavel.freenode.net PONG barjavel.freenode.net :0
+02:52:35 logbot.1 | [2015/07/01 02:52:35.670] << PING 0 
+02:52:35 logbot.1 | [2015/07/01 02:52:35.714] >> :barjavel.freenode.net PONG barjavel.freenode.net :0
+02:54:35 logbot.1 | [2015/07/01 02:54:35.670] << PING 0 
+02:54:35 logbot.1 | [2015/07/01 02:54:35.714] >> :barjavel.freenode.net PONG barjavel.freenode.net :0
+02:56:35 logbot.1 | [2015/07/01 02:56:35.670] << PING 0 
+02:56:35 logbot.1 | [2015/07/01 02:56:35.715] >> :barjavel.freenode.net PONG barjavel.freenode.net :0
+02:58:35 logbot.1 | [2015/07/01 02:58:35.670] << PING 0 
+02:58:35 logbot.1 | [2015/07/01 02:58:35.715] >> :barjavel.freenode.net PONG barjavel.freenode.net :0
+03:00:35 logbot.1 | [2015/07/01 03:00:35.670] << PING 0 
+03:00:35 logbot.1 | [2015/07/01 03:00:35.715] >> :barjavel.freenode.net PONG barjavel.freenode.net :0
+03:02:35 logbot.1 | [2015/07/01 03:02:35.670] << PING 0 
+03:02:35 logbot.1 | [2015/07/01 03:02:35.721] >> :barjavel.freenode.net PONG barjavel.freenode.net :0
+03:04:35 logbot.1 | [2015/07/01 03:04:35.671] << PING 0 
+03:04:35 logbot.1 | [2015/07/01 03:04:35.715] >> :barjavel.freenode.net PONG barjavel.freenode.net :0
+SIGTERM received
+03:05:00 system   | sending SIGTERM to all processes
+03:05:01 logbot.1 | terminated by SIGTERM
