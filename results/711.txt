@@ -1,0 +1,1 @@
+Adobe Flash Player ShaderJob Buffer Overflow - Exploits Database;www.exploit-db.com;https://www.exploit-db.com/exploits/37368/

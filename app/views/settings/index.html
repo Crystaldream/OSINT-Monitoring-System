@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+<br><br><br><br><br>
+
+
+<div>
+
+    Add New Source
+
+    <%= form_for :source do |f| %>
+
+    <p> Link: <%= f.text_field :link, :placeholder => "Enter Link", required: true %> </p>
+
+    <p> <%= f.submit "Add Source" %> </p>
+
+    <% end %>
+
+</div>
+
+</body>
+</html>

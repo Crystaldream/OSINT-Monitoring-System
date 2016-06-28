@@ -1,0 +1,95 @@
+
+<html>
+
+    <%= stylesheet_link_tag "search" %>
+
+    <body>
+
+    <div class="background_main">
+
+        <div class="background">
+
+        <% if !searches.blank? %>
+
+            <div class="crt">
+
+                <h1>Sensors</h1>
+
+                <table class="search">
+
+                    <% searches.each do |item| %>
+
+                        <tr>
+
+                          <% count = 0 %>
+                          <% item.each do |i| %>
+
+                            <td>
+
+                                <% count += 1 %>
+
+                                <% if count < 3 %>
+
+                                  <%= i %>
+
+                                <% end %>
+
+                            </td>
+
+                          <% end %>
+
+                          <td class="link">
+
+                              <% name_run = item[0].to_s %>
+                              <% keywords_run = item[1].to_s %>
+                              <%= link_to "Start", "/searches/start?name=" + name_run + "&keywords=" + keywords_run + "&id=" + item[2], 'data-no-turbolink' => 'true' %>
+
+                          </td>
+
+                          <td class="link">
+                              
+                                <%= link_to "Details", "/searches/" + item[2].to_s %>
+
+                          </td>
+
+                          <% end %>
+
+                      </tr>
+
+                </table>
+
+            </div>
+
+        <% end %>
+
+        </div>
+
+        <div class="crt">
+
+            <h1>Create New Sensor</h1>
+
+        </div>
+
+        <div class="crt_form">
+
+        <%= form_for :search do |f| %>
+
+            <%= f.fields_for :query do |n| %>
+
+                <p> Name <%= n.text_field :name, :placeholder => "Enter Search Name", required: true %> </p>
+
+                <p> Keywords <%= n.text_field :keywords, :placeholder => "Enter Keyword(s)", required: true %> </p>
+
+            <% end %>
+
+            <p><%= f.submit "Add Search" %></p>
+
+        <% end %>
+
+        </div>
+
+    </div>
+
+    </body>
+
+</html>

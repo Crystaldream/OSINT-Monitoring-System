@@ -1,0 +1,10 @@
+Adobe Flash Player ShaderJob Buffer Overflow - Exploits Database;www.exploit-db.com;https://www.exploit-db.com/exploits/37368/
+Linux/x86 - mkdir HACK & chmod 777 and exit(0) - 29 Bytes;www.exploit-db.com;https://www.exploit-db.com/exploits/37358/
+Linux/x86 - Netcat BindShell Port 5555 - 60 bytes - Exploits Database;www.exploit-db.com;https://www.exploit-db.com/exploits/37359/
+linux/x86-64 execve/bin/sh 30 bytes - Exploits Database;www.exploit-db.com;https://www.exploit-db.com/exploits/37362/
+Linux x86 - execve /bin/sh 23 Bytes - Exploits Database;www.exploit-db.com;https://www.exploit-db.com/exploits/37384/
+Linux/x86 Downloand & Execute - Exploits Database;www.exploit-db.com;https://www.exploit-db.com/exploits/37365/
+Linux/x86 Reboot - 28 Bytes - Exploits Database;www.exploit-db.com;https://www.exploit-db.com/exploits/37366/
+Linux/x86 - exec'/bin/dash' shellcode 45 bytes - Exploits Database;www.exploit-db.com;https://www.exploit-db.com/exploits/37393/
+Linux/x86 - chmod'/etc/passwd',0777 shellcode 42 bytes - Exploits ...;www.exploit-db.com;https://www.exploit-db.com/exploits/37390/
+Linux 64 bit - Encoded execve shellcode - Exploits Database;www.exploit-db.com;https://www.exploit-db.com/exploits/37401/

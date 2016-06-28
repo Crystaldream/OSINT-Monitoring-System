@@ -1,0 +1,4 @@
+#!/home/telmo/OSINT/Sketchy/sketchenv/bin/python
+# EASY-INSTALL-SCRIPT: 'boto==2.32.1','sdbadmin'
+__requires__ = 'boto==2.32.1'
+__import__('pkg_resources').run_script('boto==2.32.1', 'sdbadmin')

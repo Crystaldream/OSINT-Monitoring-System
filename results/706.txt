@@ -1,0 +1,14 @@
+Heroku Bug Bounty #2 - API Re Auth Session Bypass Vulnerability ...;www.exploit-db.com;https://www.exploit-db.com/exploits/37256
+WordPress Encrypted Contact Form Plugin 1.0.4 - CSRF Vulnerability;www.exploit-db.com;https://www.exploit-db.com/exploits/37264
+Nakid CMS - Multiple Vulnerabilities - Exploits Database;www.exploit-db.com;https://www.exploit-db.com/exploits/37270
+ZCMS 1.1 - Multiple Vulnerabilities - Exploits Database;www.exploit-db.com;https://www.exploit-db.com/exploits/37272
+Opsview = 4.6.2 - Multiple XSS Vulnerabilities - Exploits Database;www.exploit-db.com;https://www.exploit-db.com/exploits/37271
+vfront-0.99.2 CSRF & Persistent XSS - Exploits Database;www.exploit-db.com;https://www.exploit-db.com/exploits/37186
+Marco Delai - Exploits Database;www.exploit-db.com;https://www.exploit-db.com/author/?a=8076
+Raschin Tavakoli, Bernhard Garn, Peter Aufner and Dimitris Simos ...;www.exploit-db.com;https://www.exploit-db.com/author/?a=8075
+Suraj Krishnaswami - Exploits Database;www.exploit-db.com;https://www.exploit-db.com/author/?a=8077
+CUPS 2.0.3 - Multiple Vulnerabilities - Exploits Database;www.exploit-db.com;https://www.exploit-db.com/exploits/37336
+Koha = 3.20.1 - Multiple XSS and XSRF Vulnerabilities - Exploits ...;www.exploit-db.com;https://www.exploit-db.com/exploits/37389
+ManageEngine Asset Explorer 6.1 - Stored XSS - Exploits Database;www.exploit-db.com;https://www.exploit-db.com/exploits/37395
+GeniXCMS 0.0.3 - XSS Vulnerabilities - Exploits Database;www.exploit-db.com;https://www.exploit-db.com/exploits/37360
+Thycotic Secret Server 8.8.000004 - Stored XSS - Exploits Database;www.exploit-db.com;https://www.exploit-db.com/exploits/37394

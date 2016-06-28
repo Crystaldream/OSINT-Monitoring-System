@@ -1,0 +1,3 @@
+
+Hi <%= @user.email %>, new alerts were detected.
+Thank you.

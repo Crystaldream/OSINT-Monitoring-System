@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<div>
+
+    <h1>
+        IRC Bot
+    </h1>
+
+    <div>
+
+        <div>
+
+            <%= form_for :bot do |f| %>
+
+                <%= f.fields_for :query do |n| %>
+
+                    <div><p> Server <%= n.text_field :server, :placeholder => "Server", required: true %> </p></div>
+
+                    <div><p> Nickname <%= n.text_field :nick, :placeholder => "Nickname", required: true %> </p></div>
+
+                    <div><p> Channel <%= n.text_field :channel, :placeholder => "#Channel", required: true %> </p></div>
+
+                    <div><p> Keywords <%= n.text_field :keywords, :placeholder => "Keywords", required: true %> </p></div>
+
+                <% end %>
+
+            <p><%= f.submit "Start Bot" %></p>
+
+            <% end %>
+
+        </div>
+
+        <div>
+            <p><%= link_to "Details", "http://localhost:5000/channel/" + ""  %></p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+
+<h1> Results </h1>
+
+<table>
+
+    <tr>
+        <th>Title</th>
+        <th>Domain</th>
+        <th>Link</th>
+    </tr>
+
+    <% results.each_with_index do |title, index| %>
+        <tr>
+            <td><%= title %><td>
+            <td><%= domains_results[index] %></td>
+            <td><%= links_results[index] %></td>
+        </tr>
+    <% end %>
+
+</table>
