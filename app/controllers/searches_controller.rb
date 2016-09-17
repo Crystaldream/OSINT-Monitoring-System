@@ -194,8 +194,8 @@ class SearchesController < ApplicationController
     @session = Capybara::Session.new(:selenium)
     @session.driver.browser.manage.window.maximize
     @session.visit('http://localhost:3000')
-    @session.fill_in 'user_email', with: "telmo.reinas@gmail.com"
-    @session.fill_in 'user_password', with: "oyasuminasai_4"
+    @session.fill_in 'user_email', with: "your_email"
+    @session.fill_in 'user_password', with: "your_password"
     @session.find_button("Sign in").click
 
     @session.find(:xpath, "//a[@href='/searches']").click
